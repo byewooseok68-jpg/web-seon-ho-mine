@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+<title>Biodata Kim Seon Ho</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #cde7f0, #eaf6fb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.bungkus {
+    width: 950px;
+    height: 520px;
+    display: grid;
+    
+    background-color:maroon;
+    
+}
+
+
+.left {
+    position: relative;
+    background: url('https://static.wikia.nocookie.net/the-dramas/images/c/ca/20.jpg/revision/latest?cb=20240523004230') center/cover;
+}
+
+.left::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.3), transparent);
+}
+
+
+.right {
+    background: rgba(255,255,255,0.85);
+    padding: 40px;
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+
+.line {
+    width: 60px;
+    height: 3px;
+    background: #89c2d9;
+    margin-bottom: 20px;
+}
+
+
+.info {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #333;
+}
+
+
+.desc {
+    margin-top: 20px;
+    padding: 15px;
+    border-left: 4px solid #89c2d9;
+    background: #eef6f8;
+    transition: 0.3s;
+}
+
+.desc:hover {
+    transform: translateX(6px);
+}
+
+
+.footer {
+    margin-top: 20px;
+    font-size: 13px;
+    font-style: italic;
+    color: #555;
+}
+
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(30px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+
+@media(max-width: 768px){
+    .bungkus {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    .left {
+        height: 300px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="bungkus">
+
+    <div class="left"></div>
+
+    <div class="right">
+        <div class="title">Kim Seon Ho</div>
+        <div class="line"></div>
+
+        <div class="info">
+            <strong>Nama:</strong> Kim Seon Ho <br>
+            <strong>Umur:</strong> 40 tahun <br>
+            <strong>Tempat, Tanggal Lahir:</strong> Seoul, 8 Mei 1986 <br>
+            <strong>Drama:</strong> Start-Up, Hometown Cha-Cha-Cha, 100 Days My Prince, Catch The Ghost <br>
+            <strong>Fans:</strong> Jutaan penggemar di seluruh dunia
+        </div>
+
+        <div class="desc">
+            Kim Seon Ho merupakan aktor Korea Selatan yang dikenal melalui kemampuan aktingnya yang natural dan penuh emosi, serta mampu membangun karakter yang kuat dan berkesan di setiap perannya.
+        </div>
+
+        <div class="footer">
+            Saya mengidolakan Kim Seon Ho karena ia memiliki wajahyang menawan, badan atletis, serta kepribadian yang hangat dan baik hati. Pesonanya terasa sederhana namun tetap elegan dan menginspirasi banyak orang.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
